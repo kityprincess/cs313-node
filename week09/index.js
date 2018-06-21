@@ -66,25 +66,25 @@ function determineRate(req, res) {
 				rate = '3.50'
 			} else if (weight > 2 && weight <= 3) {
 				rate = '3.50'
-			} else if (weight > 3 && <= weight 4) {
+			} else if (weight > 3 && weight<= 4) {
 				rate = '3.50'
-			} else if (weight > 4 && <= weight 5) {
+			} else if (weight > 4 && weight<= 5) {
 				rate = '3.75'
-			} else if (weight > 5 && <= weight 6) {
+			} else if (weight > 5 && weight<= 6) {
 				rate = '3.75'
-			} else if (weight > 6 && <= weight 7) {
+			} else if (weight > 6 && weight<= 7) {
 				rate = '3.75'
-			} else if (weight > 7 && <= weight 8) {
+			} else if (weight > 7 && weight<= 8) {
 				rate = '3.75'
-			} else if (weight > 8 && <= weight 9) {
+			} else if (weight > 8 && weight<= 9) {
 				rate = '4.10'
-			} else if (weight > 9 && <= weight 10) {
+			} else if (weight > 9 && weight<= 10) {
 				rate = '4.45'
-			} else if (weight > 10 && <= weight 11) {
+			} else if (weight > 10 && weight<= 11) {
 				rate = '4.80'
-			} else if (weight > 11 && <= weight 12) {
+			} else if (weight > 11 && weight<= 12) {
 				rate = '5.15'
-			} else if (weight > 12 && <= weight 13) {
+			} else if (weight > 12 && weight<= 13) {
 				rate = '5.50'
 			} 
 			break
