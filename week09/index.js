@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
-function determineRate(req, res) {
+function calculateRate(req, res) {
 	// console.log(req.query)
 	var weight = Number(req.query.weight)
 	var rate = 0
@@ -90,6 +90,7 @@ function determineRate(req, res) {
 			break
 	}
 	// console.log('rate is ', rate)
+	rate = 5;
 	return rate
 }
 
@@ -102,7 +103,7 @@ express()
   		res.render('pages/rates', {
   			weight: req.query.weight,
   			mailType: req.query.mailType,
-  			rate: determineRate(req, res)
+  			rate: calculateRate(req, res)
   		})
   	})
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
