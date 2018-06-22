@@ -8,7 +8,7 @@ function determineRate(req, res) {
 	var rate = 0
 	switch (req.query.mailType)
 	{
-		case 'ltrstmp':
+		case 'Letters (Stamped)':
 			if (weight > 0 && weight <= 1) {
 				rate = '0.50'
 			} else if (weight > 1 && weight <= 2) {
@@ -19,7 +19,7 @@ function determineRate(req, res) {
 				rate = '1.13'
 			}
 			break
-		case 'ltrmtrd':
+		case 'Letters (Metered)':
 			if (weight > 0 && weight <= 1) {
 				rate = '0.47'
 			} else if (weight > 1 && weight <= 2) {
@@ -30,7 +30,7 @@ function determineRate(req, res) {
 				rate = '1.10'
 			}
 			break
-		case 'lrgenv':
+		case 'Large Envelopes (Flats)':
 			if (weight > 0 && weight <= 1) {
 				rate = '1.00'
 			} else if (weight > 1 && weight <= 2) {
@@ -59,7 +59,7 @@ function determineRate(req, res) {
 				rate = '3.52'
 			} 
 			break
-		case 'pkg':
+		case 'First-Class Package Service - Retail':
 			if (weight > 0 && weight <= 1) {
 				rate = '3.50'
 			} else if (weight > 1 && weight <= 2) {
