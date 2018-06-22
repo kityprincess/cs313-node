@@ -13,13 +13,19 @@ body {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Jazz LET, fantasy;
   font-size: 30px;
   colcr: #7FFF00;
 }
 
+h2 {
+  font-family: Trattatello, fantasy;
+  font-size: 26px;
+  colcr: #7FFF00;
+}
+
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Chalkduster, fantasy;
   font-size: 20px;
   colcr: #7FFF00;
 }
