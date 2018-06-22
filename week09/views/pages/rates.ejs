@@ -4,17 +4,11 @@
 <html>
 
 <head>
-    <title>Postage Rate</title>
-    <style>
-        span { color: red; }
-    </style>
-    <script>
-        // do whatever
-    </script>
+  <% include ../partials/header.ejs %>
 </head>
 
 <body>
-    Weight: <span><%= weight %> oz</span><br>
+    Weight: <%= weight %> oz<br>
     MailType: <%= mailType %><br>
     Rate: <%= rate %><br>
 </body>
