@@ -18,6 +18,8 @@ function calculateRate(req, res) {
 			} else if (weight > 3 && weight <= 3.5) {
 				rate = '1.13'
 			}
+			else
+				rate = '100'
 			break
 		case 'Letters (Metered)':
 			if (weight > 0 && weight <= 1) {
@@ -29,6 +31,8 @@ function calculateRate(req, res) {
 			} else if (weight > 3 && weight <= 3.5) {
 				rate = '1.10'
 			}
+			else
+				rate = '200'				
 			break
 		case 'Large Envelopes (Flats)':
 			if (weight > 0 && weight <= 1) {
@@ -58,6 +62,8 @@ function calculateRate(req, res) {
 			} else if (weight > 12 && weight <= 13) {
 				rate = '3.52'
 			} 
+			else
+				rate = '300'			
 			break
 		case 'First-Class Package Service - Retail':
 			if (weight > 0 && weight <= 1) {
@@ -87,10 +93,11 @@ function calculateRate(req, res) {
 			} else if (weight > 12 && weight<= 13) {
 				rate = '5.50'
 			} 
+			else
+				rate = '400'			
 			break
 	}
 	// console.log('rate is ', rate)
-	rate = 5;
 	return rate
 }
 
