@@ -10,11 +10,16 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kimberly Stowe",
-  "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.6",
     "express": "^4.16.3",
     "pg": "^7.4.3"
-  }
+  },
+    "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Kimberly Stowe",
+  "license": "ISC"
 }
